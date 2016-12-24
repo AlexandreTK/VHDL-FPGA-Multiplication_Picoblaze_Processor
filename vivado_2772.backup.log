@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Nov 17 16:57:49 2016
+# Process ID: 2772
+# Current directory: C:/Users/Alexandre/Desktop/mult_pico_blazer_display
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4628 C:\Users\Alexandre\Desktop\mult_pico_blazer_display\mult_pico_blazer.xpr
+# Log file: C:/Users/Alexandre/Desktop/mult_pico_blazer_display/vivado.log
+# Journal file: C:/Users/Alexandre/Desktop/mult_pico_blazer_display\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Alexandre/Desktop/mult_pico_blazer_display/mult_pico_blazer.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 709.418 ; gain = 91.496
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Alexandre/Desktop/mult_pico_blazer_display/.Xil/Vivado-2772-DESKTOP-7FAJQ9S/dcp/top.xdc]
+Finished Parsing XDC File [C:/Users/Alexandre/Desktop/mult_pico_blazer_display/.Xil/Vivado-2772-DESKTOP-7FAJQ9S/dcp/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 949.570 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 949.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 40 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 4 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 2 instances
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1033.832 ; gain = 291.691
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1408.289 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 18 08:09:27 2016...

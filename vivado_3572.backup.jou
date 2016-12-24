@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Nov 04 08:13:14 2016
+# Process ID: 3572
+# Current directory: C:/Users/Alexandre/Desktop/mult_pico_blazer_display
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4060 C:\Users\Alexandre\Desktop\mult_pico_blazer_display\mult_pico_blazer.xpr
+# Log file: C:/Users/Alexandre/Desktop/mult_pico_blazer_display/vivado.log
+# Journal file: C:/Users/Alexandre/Desktop/mult_pico_blazer_display\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Alexandre/Desktop/mult_pico_blazer_display/mult_pico_blazer.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Alexandre/Desktop/mult_pico_blazer_display/mult_pico_blazer.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Alexandre/Desktop/mult_pico_blazer_display/mult_pico_blazer.runs/impl_1/top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw

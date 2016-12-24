@@ -1,0 +1,68 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Fri Oct 21 15:51:36 2016
+| Host         : DESKTOP-7FAJQ9S running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              58 |           19 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              40 |           14 |
+| Yes          | No                    | No                     |              40 |           12 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              14 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+----------------+
+|                         Clock Signal                         |                                        Enable Signal                                       |                                        Set/Reset Signal                                       | Slice Load Count | Bel Load Count |
++--------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+----------------+
+|  program_rom/instantiate_loader.jtag_loader_6_inst/CLK       |                                                                                            |                                                                                               |                1 |              1 |
+|  clk_IBUF_BUFG                                               | processor/CE                                                                               | processor/R                                                                                   |                1 |              2 |
+|  program_rom/instantiate_loader.jtag_loader_6_inst/CLK       |                                                                                            | program_rom/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int[7]_i_1_n_0 |                1 |              4 |
+|  clk_IBUF_BUFG                                               |                                                                                            | processor/active_interrupt_flop_n_0                                                           |                2 |              4 |
+|  clk_IBUF_BUFG                                               |                                                                                            | processor/R                                                                                   |                3 |              6 |
+|  clk_IBUF_BUFG                                               |                                                                                            | program_rom/instruction[7]                                                                    |                3 |              8 |
+|  clk_IBUF_BUFG                                               | processor/spm_enable_flop_n_0                                                              |                                                                                               |                2 |              8 |
+|  clk_IBUF_BUFG                                               | processor/E[0]                                                                             |                                                                                               |                2 |              8 |
+|  clk_IBUF_BUFG                                               | processor/I3                                                                               | processor/R                                                                                   |                3 |             12 |
+|  program_rom/instantiate_loader.jtag_loader_6_inst/shift_clk | program_rom/instantiate_loader.jtag_loader_6_inst/shift                                    |                                                                                               |                4 |             14 |
+|  clk_IBUF_BUFG                                               | processor/I3                                                                               |                                                                                               |                2 |             16 |
+|  clk_IBUF_BUFG                                               | processor/WE                                                                               |                                                                                               |                2 |             16 |
+|  program_rom/instantiate_loader.jtag_loader_6_inst/shift_clk | program_rom/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.jtag_din_int[17]_i_1_n_0 |                                                                                               |                6 |             18 |
+|  clk_IBUF_BUFG                                               |                                                                                            | U1/clear                                                                                      |                5 |             18 |
+|  clk_IBUF_BUFG                                               |                                                                                            |                                                                                               |               18 |             57 |
++--------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+----------------+
+
+
